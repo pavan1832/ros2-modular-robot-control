@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    publish_rate_hz: 100.0
+    accel_noise_stddev: 0.01        # m/s² — typical consumer MEMS IMU
+    gyro_noise_stddev: 0.001        # rad/s
+    accel_bias_drift_rate: 0.00001  # m/s² per tick (random walk)
+    inject_fault: false             # Set true to test fault handling
+    frame_id: "imu_link"

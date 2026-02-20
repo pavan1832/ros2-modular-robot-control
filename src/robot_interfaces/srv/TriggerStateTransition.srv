@@ -1,0 +1,10 @@
+# TriggerStateTransition.srv
+# Manually trigger a state machine transition (for operator override).
+
+uint8 target_state    # Use RobotState.STATE_* constants
+string reason         # Why the operator is overriding
+---
+bool success
+string message
+uint8 previous_state
+uint8 new_state

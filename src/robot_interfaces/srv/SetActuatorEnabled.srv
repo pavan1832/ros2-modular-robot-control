@@ -1,0 +1,9 @@
+# SetActuatorEnabled.srv
+# Enable or disable the actuator. Disabling cuts motor power safely.
+
+bool enable           # true = enable, false = disable
+string reason         # audit trail: why this is being requested
+---
+bool success
+string message        # human-readable result description
+uint8 fault_code      # echoes ActuatorState fault_code if failed

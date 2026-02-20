@@ -1,0 +1,10 @@
+/**:
+  ros__parameters:
+    state_publish_rate_hz: 50.0
+    dof_count: 6                          # 6-DOF robot arm
+    command_timeout_ms: 500               # reject commands older than 500 ms
+    max_temperature_celsius: 75.0         # soft thermal limit
+    emergency_stop_temperature: 85.0      # hard E-stop
+    max_joint_velocity_rad_s: 3.14159     # π rad/s ≈ 180°/s
+    max_torque_nm: 50.0
+    max_speed_fraction: 1.0

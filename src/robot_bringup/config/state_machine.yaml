@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    state_publish_rate_hz: 10.0
+    sensor_health_timeout_sec: 2.0        # declare sensor unhealthy after 2 s silence
+    actuator_health_timeout_sec: 2.0
+    auto_recovery_enabled: true           # false = require operator to trigger recovery
+    recovery_wait_sec: 5.0               # wait 5 s in RECOVERING before checking health
